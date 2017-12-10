@@ -1,0 +1,135 @@
+---
+layout: default
+title: Contact
+breadcrumb: Reach out to a DistiSuite representative
+---
+		            
+		            	            	<div class="title2">We are only a phone call, email, or fax away</div>
+                <div class="sub2">We will get back to you by the next business day</div>
+            
+            	<div class="sep2"></div>
+                
+                <div class="contact">
+                    <div class="contactTop"></div>
+                    <div class="contactContent">
+                    <strong>Phone:</strong>1-800-528-1384<br />
+                    <strong>By Mail:</strong> 957 Route 33, Suite #256, Hamilton, NJ 08690
+                    </div>
+                    <div class="contactBottom"></div>
+                </div>
+                
+                <div class="sep2"></div>
+            	<div class="bigVid">
+                	<div class="title">Contact Form</div>  
+            		
+                </div>    
+                
+                <form onsubmit="return ValidateForm();" id="ContactContactForm" method="post" action="https://getsimpleform.com/messages?form_api_token=326a8fc2047cd1c76c7a23d2a2117921">              
+					   
+                	  <input type="hidden" name="redirect_to" value="http://www.distisuite.com/contact/?submitted=true" />
+
+                	  <div class="contactNotification" id="contactNotification" style="display: none">
+                	  	Your Message Has Been Submitted!  We will be in touch shortly.
+                	  </div>
+						                
+	                <div class="title3">Email</div>
+	                	<input type="hidden" name="name" value="N/A" />
+	                	<input name="email" type="text" id="emailAddress" class="textBox" />	                <div class="title3">Message</div>
+	                	<textarea name="message" class="textarea" id="ContactMessage" ></textarea>	                
+	                <div class="right2">
+	                	<div class="submit"><input id="contactSubmit" type="submit" value="" /></div>	                </div>
+                
+                </form>                
+<script language = "Javascript">
+
+	function submitted() {
+
+		var field = 'submitted';
+		var url = window.location.href;
+		if(url.indexOf('?' + field + '=') != -1) {
+		    return true;
+		} else if(url.indexOf('&' + field + '=') != -1) {
+		    return true;
+		}
+		return false;
+
+	}
+
+	function showThankYou() {
+
+		if (submitted()) {
+			document.getElementById("contactNotification").style.display = "block";
+		}
+
+	}
+
+	showThankYou();
+	
+	function echeck(str) {
+	
+		var at="@";
+		var dot=".";
+		var lat=str.indexOf(at);
+		var lstr=str.length;
+		var ldot=str.indexOf(dot);
+		if (str.indexOf(at)==-1){
+		   alert("Please provide us with a valid email address.");
+		   return false;
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert("Please provide us with a valid email address.");
+		   return false;
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert("Please provide us with a valid email address.");
+		    return false;
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert("Please provide us with a valid email address.");
+		    return false;
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert("Please provide us with a valid email address.");
+		    return false;
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert("Please provide us with a valid email address.");
+		    return false;
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    alert("Please provide us with a valid email address.");
+		    return false;
+		 }
+
+ 		 return true;
+ 		 			
+	}
+	
+	function ValidateForm(){
+		
+		var emailID=document.getElementById('emailAddress');
+		
+		if ((emailID.value==null)||(emailID.value=="")){
+			alert("Please provide us with a valid email address.");
+			emailID.focus();
+			return false;
+		}
+		
+		if (echeck(emailID.value)==false){
+			emailID.value="";
+			emailID.focus();
+			return false;
+		}
+		
+		return true;
+		
+	 }
+	 
+</script>	
+      

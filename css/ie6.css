@@ -1,0 +1,108 @@
+#topNav a:hover,.active
+{
+	background-image:url('{{site.baseurl}}img/bubble.gif');
+}
+
+#homeTop
+{
+	width:960px;
+	height:21px;
+	background-image:url('{{site.baseurl}}img/homeTop.gif');
+}
+
+#homeBottom
+{
+	background-image:url('{{site.baseurl}}img/homeBottom.gif');
+}
+
+#home .video
+{
+	right:35px;
+}
+
+.blueButton,.greenButton
+{
+	background-image:url('{{site.baseurl}}img/buttonBlue.gif');
+}
+
+.greenButton
+{
+	background-image:url('{{site.baseurl}}img/buttonGreen.gif');
+}
+
+.contentTop
+{
+	width:946px;
+	background-image:url('{{site.baseurl}}img/contentTop.gif');
+}
+
+.contentBottom
+{
+	background-image:url('{{site.baseurl}}img/contentBottom.gif');
+}
+
+.contentLeft
+{
+	margin-left:5px;
+}
+
+.boxTop
+{
+	background-image:url('{{site.baseurl}}img/boxTop.gif');
+}
+
+.fBox .boxBottom
+{
+	background-image:url('{{site.baseurl}}img/fBoxBottom.gif');
+}
+
+.contentRight
+{
+	margin-right:5px;
+	border:#000 0 solid;
+}
+
+.rightTop
+{
+	background-image:url('{{site.baseurl}}img/rightTop.gif');
+}
+
+.rightBottom
+{
+	background-image:url('{{site.baseurl}}img/rightBottom.gif');
+}
+
+h4
+{
+	background-image:url('{{site.baseurl}}img/h4.gif');
+}
+
+.readMore a:link,.readMore a:active,.readMore a:hover,.readMore a:visited
+{
+	background-image:url('{{site.baseurl}}img/readMore.gif');
+}
+
+h1
+{
+	background-image:url('{{site.baseurl}}img/h1.gif');
+}
+
+.bigVid .date
+{
+	background-image:url('{{site.baseurl}}img/news.gif');
+}
+
+.contactTop
+{
+	background-image:url('{{site.baseurl}}img/contactTop.gif');
+}
+
+.contactBottom
+{
+	background-image:url('{{site.baseurl}}img/contactBottom.gif');
+}
+
+#box1 .boxBottom,#box2 .boxBottom
+{
+	background-image:url('{{site.baseurl}}img/box1Bottom.gif');
+}

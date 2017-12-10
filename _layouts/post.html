@@ -1,0 +1,19 @@
+---
+layout: default
+title: News
+breadcrumb: Articles, Announcements, etc.
+---
+
+<div style="margin-bottom: 10px"><a href="{{site.baseurl}}news" class="postBack">« View all posts</a></div>
+
+	<div class="bigVid">
+		<div class="title">
+			{{ page.postTitle }}			<div class="date">Posted on {{ page.date | date: "%B %-d, %Y" }} by {{ page.author }}</div>
+		</div>
+	</div>
+	
+	<div class="textInfo">
+
+		{{ content }}
+
+	</div>
