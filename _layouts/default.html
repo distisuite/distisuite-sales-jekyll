@@ -20,13 +20,13 @@
 			
 			<div id="header">
 				
-				<a href="{{site.url}}"><img src="{{site.baseurl}}img/logo.gif" alt="" /></a>				
+				<a href="{{site.url}}"><img src="{{site.baseurl}}/img/logo.gif" alt="" /></a>				
 				<div id="topNav">
 
-					<a href="{{site.baseurl}}contact" {% if page.title == 'Contact' %}class="active"{% endif %}><span>Contact</span></a>
-					<a href="{{site.baseurl}}news" {% if page.title == 'News' %}class="active"{% endif %}><span>News</span></a>
-					<a href="{{site.baseurl}}features" {% if page.title == 'Features' %}class="active"{% endif %}><span>Features</span></a>
-					<a href="{{site.baseurl}}about" {% if page.title == 'About' %}class="active"{% endif %}><span>About</span></a>
+					<a href="{{site.baseurl}}/contact" {% if page.title == 'Contact' %}class="active"{% endif %}><span>Contact</span></a>
+					<a href="{{site.baseurl}}/news" {% if page.title == 'News' %}class="active"{% endif %}><span>News</span></a>
+					<a href="{{site.baseurl}}/features" {% if page.title == 'Features' %}class="active"{% endif %}><span>Features</span></a>
+					<a href="{{site.baseurl}}/about" {% if page.title == 'About' %}class="active"{% endif %}><span>About</span></a>
 					<a href="{{site.url}}" {% if page.title == 'Home' %}class="active"{% endif %}><span>Home</span></a>
 									</div>
 				
@@ -71,7 +71,7 @@
 		                	
 			                	{% if (page.title != 'News' or (page.title == 'News' and page.postTitle)) %}
 
-		                			<a href="{{site.baseurl}}news" style="text-decoration: none"><h4>Recent News</h4></a>		
+		                			<a href="{{site.baseurl}}/news" style="text-decoration: none"><h4>Recent News</h4></a>		
 
 									{% for post in site.posts limit:2 %}	                    
 				                    				                    
